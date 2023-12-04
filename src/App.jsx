@@ -12,7 +12,7 @@ function App() {
     });
 
     const handleUserInputChange = (identifier, inputValue) => {
-        setUserInput((prev) => ({ ...prev, [identifier]: inputValue }));
+        setUserInput((prev) => ({ ...prev, [identifier]: +inputValue }));
     };
 
     return (
